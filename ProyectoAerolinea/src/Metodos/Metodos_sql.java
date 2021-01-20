@@ -39,8 +39,21 @@ public class Metodos_sql {
     public int leerUsuario(){
         return 0;
     }
-    public int actualizarUsuario(){
-        return 0;
+    public int actualizarUsuario(String Nombre, String Apellidos, String CURP, String Domicilio, String Celular, String Correo, String Contraseña, String Fecha_nac, String Sexo, String id_paquete){
+        try {
+        Connection con=DriverManager.getConnection("jdbc:mysql://localhost/agencia_viajes","root","");
+        Statement stmt=con.createStatement();
+        //ResultSet rs=stmt.executeQuery("SELECT * FROM usuarios WHERE ID"+txtCURP.getText());
+        int rs = stmt.executeUpdate("UPDATE usuarios SET (Nombre, Apellidos, CURP, Domicilio, Celular, Correo, Contraseña, Fecha_Nac, sexo, id_paquete) VALUES (?,?,?,?,?,?,?,?,?,?)");
+        //("SELECT * FROM usuarios WHERE CURP LIKE '"+txtCURP.getText()+"%' ORDER BY CURP DESC");
+                
+        
+        } catch (SQLException ex) {
+            System.out.println(ex);
+            System.out.println("No se puedo actualizar");
+        }
+        System.out.println("USUARIO CON CURP "+CURP+" ELIMINAR");
+        return 1;
     }
     public int eliminarUsuario(String CURP) throws SQLException{
         try {

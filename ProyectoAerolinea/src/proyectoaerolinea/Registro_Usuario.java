@@ -47,7 +47,6 @@ public class Registro_Usuario extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         btnGuardar = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        Calendario = new com.toedter.calendar.JDateChooser();
         txtNombre = new javax.swing.JTextField();
         txtApellidos = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -59,6 +58,7 @@ public class Registro_Usuario extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         btnRegresar = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
+        Calendario = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -113,7 +113,6 @@ public class Registro_Usuario extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel10.setText("Sexo:");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, -1, -1));
-        getContentPane().add(Calendario, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, -1, -1));
         getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 160, -1));
         getContentPane().add(txtApellidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 160, -1));
 
@@ -147,6 +146,7 @@ public class Registro_Usuario extends javax.swing.JFrame {
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/small.jpg"))); // NOI18N
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 0, -1, -1));
+        getContentPane().add(Calendario, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

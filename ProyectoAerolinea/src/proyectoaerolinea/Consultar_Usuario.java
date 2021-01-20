@@ -207,6 +207,16 @@ public class Consultar_Usuario extends javax.swing.JFrame {
         System.out.println(contraseña);
         System.out.println(nacimiento);
         System.out.println(sexo);
+        
+        
+        try {
+            Metodos.Metodos_sql eliminar = new Metodos_sql();
+            int resultado = eliminar.eliminarUsuario(curp);
+            JOptionPane.showMessageDialog(null, "Se elimino");
+        } catch (SQLException ex) {
+            Logger.getLogger(Consultar_Usuario.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, "NO se elimino");
+        }
     }
    
     
@@ -219,7 +229,7 @@ public class Consultar_Usuario extends javax.swing.JFrame {
         System.out.println(row);
         System.out.println(col);
         System.out.println(curp);
-        /*
+        
         try {
             Metodos.Metodos_sql eliminar = new Metodos_sql();
             int resultado = eliminar.eliminarUsuario(curp);
@@ -228,7 +238,7 @@ public class Consultar_Usuario extends javax.swing.JFrame {
             Logger.getLogger(Consultar_Usuario.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "NO se elimino");
         }
-        */
+        
     }
     
     private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
