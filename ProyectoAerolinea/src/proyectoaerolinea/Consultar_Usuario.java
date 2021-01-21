@@ -210,10 +210,10 @@ public class Consultar_Usuario extends javax.swing.JFrame {
         
         
         try {
-            Metodos.Metodos_sql eliminar = new Metodos_sql();
-            int resultado = eliminar.eliminarUsuario(curp);
-            JOptionPane.showMessageDialog(null, "Se elimino");
-        } catch (SQLException ex) {
+            Metodos.Metodos_sql actualizar = new Metodos_sql();
+            int resultado = actualizar.actualizarUsuario(nombre, apellidos, curp, domicilio, celular, correo, contraseña, celular, sexo);
+            JOptionPane.showMessageDialog(null, "Se actualizo");
+        } catch (Exception ex) {
             Logger.getLogger(Consultar_Usuario.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "NO se elimino");
         }
@@ -275,6 +275,10 @@ public class Consultar_Usuario extends javax.swing.JFrame {
     private void btnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarActionPerformed
         // TODO add your handling code here:
         actualizarUsuario();
+        Actualizar_usuario m1=new Actualizar_usuario();
+        m1.setVisible(true);
+        this.dispose();
+        
     }//GEN-LAST:event_btnActualizarActionPerformed
 
     /**

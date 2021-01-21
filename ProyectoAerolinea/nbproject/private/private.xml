@@ -3,15 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/angel/Documents/NetBeansProjects/ProyectoAerolinea/src/proyectoaerolinea/Menu_Principal.java</file>
-            <file>file:/C:/Users/angel/Documents/NetBeansProjects/ProyectoAerolinea/src/proyectoaerolinea/Ingresa_Usuario.java</file>
-            <file>file:/C:/Users/angel/Documents/NetBeansProjects/ProyectoAerolinea/src/Metodos/Metodos_sql.java</file>
-            <file>file:/C:/Users/angel/Documents/NetBeansProjects/ProyectoAerolinea/src/Metodos/Vuelo.java</file>
-            <file>file:/C:/Users/angel/Documents/NetBeansProjects/ProyectoAerolinea/src/Metodos/Conexion_BD.java</file>
-            <file>file:/C:/Users/angel/Documents/NetBeansProjects/ProyectoAerolinea/src/proyectoaerolinea/Consultar_Usuario.java</file>
-            <file>file:/C:/Users/angel/Documents/NetBeansProjects/ProyectoAerolinea/src/Metodos/Usuario.java</file>
-            <file>file:/C:/Users/angel/Documents/NetBeansProjects/ProyectoAerolinea/src/proyectoaerolinea/Ingresar.java</file>
-            <file>file:/C:/Users/angel/Documents/NetBeansProjects/ProyectoAerolinea/src/proyectoaerolinea/Registro_Usuario.java</file>
+            <file>file:/C:/Users/angel/Documents/NetBeansProjects/agencia/ProyectoAerolinea/src/proyectoaerolinea/Registro_Usuario.java</file>
+            <file>file:/C:/Users/angel/Documents/NetBeansProjects/agencia/ProyectoAerolinea/src/Metodos/Metodos_sql.java</file>
+            <file>file:/C:/Users/angel/Documents/NetBeansProjects/agencia/ProyectoAerolinea/src/Metodos/Conexion_BD.java</file>
+            <file>file:/C:/Users/angel/Documents/NetBeansProjects/agencia/ProyectoAerolinea/src/proyectoaerolinea/Consultar_Usuario.java</file>
+            <file>file:/C:/Users/angel/Documents/NetBeansProjects/agencia/ProyectoAerolinea/src/proyectoaerolinea/Actualizar_usuario.java</file>
+            <file>file:/C:/Users/angel/Documents/NetBeansProjects/agencia/ProyectoAerolinea/src/proyectoaerolinea/Conectar.java</file>
         </group>
     </open-files>
 </project-private>

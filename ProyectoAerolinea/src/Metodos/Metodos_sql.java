@@ -22,7 +22,6 @@ import proyectoaerolinea.Consultar_Usuario;
  * @author Ángel
  */
 public class Metodos_sql {
-
     public static Conexion_BD nueva1 = new Conexion_BD();
 
     public static PreparedStatement sentencia_preparada;
@@ -39,12 +38,27 @@ public class Metodos_sql {
     public int leerUsuario(){
         return 0;
     }
-    public int actualizarUsuario(String Nombre, String Apellidos, String CURP, String Domicilio, String Celular, String Correo, String Contraseña, String Fecha_nac, String Sexo, String id_paquete){
-        try {
+    public int actualizarUsuario(String Nombre, String Apellidos, String CURP, String Domicilio, String Celular, String Correo, String Contraseña, String Fecha_nac, String Sexo){
+       
+        
+       try {
         Connection con=DriverManager.getConnection("jdbc:mysql://localhost/agencia_viajes","root","");
         Statement stmt=con.createStatement();
         //ResultSet rs=stmt.executeQuery("SELECT * FROM usuarios WHERE ID"+txtCURP.getText());
-        int rs = stmt.executeUpdate("UPDATE usuarios SET (Nombre, Apellidos, CURP, Domicilio, Celular, Correo, Contraseña, Fecha_Nac, sexo, id_paquete) VALUES (?,?,?,?,?,?,?,?,?,?)");
+        //int rs = stmt.executeUpdate("DELETE FROM usuarios WHERE CURP = '"+CURP+"'");
+        stmt.executeUpdate("UPDATE usuarios set "+" nombre='"+Nombre+"', apellidos='"+Apellidos+"', curp='"+CURP+"', domicilio='"+Domicilio+"', celular='"+Celular+"', correo='"+Correo+"' contraseña='"+Contraseña+"', fecha_nac='"+Fecha_nac+"', sexo='"+Sexo+"'"+" WHERE curp='"+CURP+"'");
+                
+        
+        } catch (SQLException ex) {
+            System.out.println(ex);
+            System.out.println("NO SE PUDO ELIMINAR");
+        }
+        System.out.println("USUARIO CON CURP"+CURP+"ELIMINAR");
+       /* try {
+        Connection con=DriverManager.getConnection("jdbc:mysql://localhost/agencia_viajes","root","");
+        Statement stmt=con.createStatement();
+        //ResultSet rs=stmt.executeQuery("SELECT * FROM usuarios WHERE ID"+txtCURP.getText());
+        int rs = stmt.executeUpdate("UPDATE usuarios SET Nombre=?, Apellidos=?, CURP=?, Domicilio=?, Celular=?, Correo=?, Contraseña=?, Fecha_Nac=?, sexo=?, id_paquete=? WHERE CURP='"+CURP+"'");
         //("SELECT * FROM usuarios WHERE CURP LIKE '"+txtCURP.getText()+"%' ORDER BY CURP DESC");
                 
         
@@ -52,7 +66,7 @@ public class Metodos_sql {
             System.out.println(ex);
             System.out.println("No se puedo actualizar");
         }
-        System.out.println("USUARIO CON CURP "+CURP+" ELIMINAR");
+        System.out.println("USUARIO CON CURP "+CURP+" Actualizar");*/
         return 1;
     }
     public int eliminarUsuario(String CURP) throws SQLException{
@@ -155,4 +169,6 @@ public class Metodos_sql {
         
         return busqueda_usuario;
     }
+
+  
 }

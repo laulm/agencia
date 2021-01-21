@@ -37,8 +37,11 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="Borrar_Usuario">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Borrar Usuario"/>
+                <Property name="text" type="java.lang.String" value="Modificar Usuario"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Borrar_UsuarioActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="Consultar_Usuario">
               <Properties>

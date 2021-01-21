@@ -8,6 +8,8 @@ package proyectoaerolinea;
 import Metodos.Metodos_sql;
 import Metodos.Usuario;
 import java.util.Calendar;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -211,6 +213,8 @@ public class Registro_Usuario extends javax.swing.JFrame {
         txtNombre.setText("");
         GroupSex.clearSelection();
         Calendario.setCalendar(null);
+        
+          
     }//GEN-LAST:event_btnGuardarActionPerformed
       
     

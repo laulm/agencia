@@ -85,7 +85,12 @@ public class Menu_Principal extends javax.swing.JFrame {
 
         jMenu2.setText("Clientes");
 
-        Borrar_Usuario.setText("Borrar Usuario");
+        Borrar_Usuario.setText("Modificar Usuario");
+        Borrar_Usuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Borrar_UsuarioActionPerformed(evt);
+            }
+        });
         jMenu2.add(Borrar_Usuario);
 
         Consultar_Usuario.setText("Consultar Usuario");
@@ -170,6 +175,13 @@ public class Menu_Principal extends javax.swing.JFrame {
         compra.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void Borrar_UsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Borrar_UsuarioActionPerformed
+        // TODO add your hadling code here:
+        Actualizar_usuario nuevo=new Actualizar_usuario();
+        nuevo.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_Borrar_UsuarioActionPerformed
 
     /**
      * @param args the command line arguments
