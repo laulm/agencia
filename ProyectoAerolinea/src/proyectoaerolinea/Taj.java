@@ -17,6 +17,7 @@ public class Taj extends javax.swing.JFrame {
     public Taj() {
         initComponents();
         setLocationRelativeTo(null);
+        
     }
 
     /**
