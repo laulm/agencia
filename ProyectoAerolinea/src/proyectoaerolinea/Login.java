@@ -16,8 +16,8 @@ public class Login {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //Ingresar.main(args);
-        Menu_Principal.main(args);
+        Ingresar.main(args);
+        //Menu_Principal.main(args);
     }
     
 }

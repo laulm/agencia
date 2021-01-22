@@ -49,7 +49,6 @@ public class Consultar_Usuario extends javax.swing.JFrame {
         btnRegresar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         btnBorrar = new javax.swing.JButton();
-        btnActualizar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -100,13 +99,6 @@ public class Consultar_Usuario extends javax.swing.JFrame {
             }
         });
 
-        btnActualizar.setText("Actualizar");
-        btnActualizar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnActualizarActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -122,11 +114,9 @@ public class Consultar_Usuario extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(230, 230, 230)
                         .addComponent(btnBuscar)
-                        .addGap(50, 50, 50)
+                        .addGap(86, 86, 86)
                         .addComponent(btnBorrar)
-                        .addGap(28, 28, 28)
-                        .addComponent(btnActualizar)
-                        .addGap(18, 18, 18)
+                        .addGap(89, 89, 89)
                         .addComponent(btnRegresar)))
                 .addContainerGap(183, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
@@ -153,8 +143,7 @@ public class Consultar_Usuario extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnBuscar)
                     .addComponent(btnRegresar)
-                    .addComponent(btnBorrar)
-                    .addComponent(btnActualizar))
+                    .addComponent(btnBorrar))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -272,15 +261,6 @@ public class Consultar_Usuario extends javax.swing.JFrame {
         borrarUsuario();
     }//GEN-LAST:event_btnBorrarActionPerformed
 
-    private void btnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarActionPerformed
-        // TODO add your handling code here:
-        actualizarUsuario();
-        Actualizar_usuario m1=new Actualizar_usuario();
-        m1.setVisible(true);
-        this.dispose();
-        
-    }//GEN-LAST:event_btnActualizarActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -319,7 +299,6 @@ JOptionPane.showMessageDialog(null, e);
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable Tabla_Consultas;
-    private javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnBorrar;
     private javax.swing.JButton btnBuscar;
     private javax.swing.JButton btnRegresar;
